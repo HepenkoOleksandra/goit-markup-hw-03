@@ -27,15 +27,17 @@ img {
     display: block;
     max-width: 100%;
 }
+
 address {
     font-style: normal;
 }
+
 .container {
     width: 100%;
     max-width: 1158px;
+    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;
 }
 
 .page-container {
@@ -50,9 +52,7 @@ main {
 
 /*----- HEADER -----*/
 .header {
-   padding-top: 26px;
-   padding-bottom: 26px;
-   border-bottom: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container {
@@ -66,7 +66,6 @@ main {
 .header-navigation {
     display: flex;
     align-items: center;
-    gap: 76px;
 }
 
 .logo {
@@ -77,6 +76,7 @@ main {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-right: 76px;
 }
 
 .header-logo-color {
@@ -84,8 +84,10 @@ main {
 }
 
 .header-menu {
-   display: flex;
-   gap: 40px;   
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-menu-item {}
@@ -97,6 +99,7 @@ main {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-menu-link:active {
@@ -110,9 +113,7 @@ main {
     align-items: center;
 }
 
-.header-address-item {
-   
-}
+.header-address-item {}
 
 .header-address-link {
     color: #434455;
@@ -121,6 +122,7 @@ main {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
 .header-address-link:hover,
 .header-address-link:focus,
 .header-address-link:active {
@@ -132,15 +134,15 @@ main {
 .main-page {
     background-color: #ffffff;
 }
+
 /*=====CONTENT======*/
 .content {
     background-color: #2E2F42;
-}
-
-.content-container {
     padding-top: 188px;
     padding-bottom: 188px;
 }
+
+.content-container {}
 
 .title-top {
     color: #FFF;
@@ -154,7 +156,7 @@ main {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 48px;
-    }
+}
 
 .content-btn {
     color: #FFF;
@@ -170,6 +172,7 @@ main {
     margin: 0 auto;
     border-radius: 4px;
     border: none;
+    min-width: 169px;
 }
 
 .content-btn:hover,
@@ -190,6 +193,19 @@ main {
 .company-container {
     padding-left: 0;
     padding-right: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .company-title {}
@@ -247,14 +263,19 @@ main {
 }
 
 .team-item {
+    width: 100%;
+    max-width: 264px;
     width: calc((100% - 3 * 24px) / 4);
     background-color: #FFF;
-    padding-bottom: 32px;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
  
 .team-img {}
+
+.team-item-name {
+    padding: 32px 0;
+}
 
 .team-item-subtitle {
     color: #2E2F42;
@@ -263,7 +284,6 @@ main {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    padding-top: 32px;
     margin-bottom: 8px;
 }
 
@@ -334,11 +354,11 @@ main {
 /*=====FOOTER=====*/
 .footer {
     background-color: #2E2F42;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.footer-container {
-    padding-top: 102px;
-    padding-bottom: 100px;
+.footer-container {   
     padding-left: 0;
     padding-right: 0;
 }
@@ -351,6 +371,8 @@ main {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-color {
@@ -363,6 +385,5 @@ main {
     color: #F4F4FD;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    margin-top: 17px;
 }
 /*===================================*/
